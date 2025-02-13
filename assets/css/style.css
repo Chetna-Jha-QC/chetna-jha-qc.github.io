@@ -21,9 +21,9 @@
 }
 
 .tracker {
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
-  /* margin-inline-end: auto;  */
+  margin-inline-end: auto; 
   bottom: 0; 
   right: 0;
 }
@@ -33,7 +33,7 @@
   margin: 0 auto;
   width: auto;
   text-align: inherit;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
 .icon-btn {
@@ -95,10 +95,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+.readme:hover{
   color: white;
   background-color: #00796b;
-} */
+}
 
 .contactme {
   position: relative;
@@ -135,9 +135,9 @@ body {
 
 /* main a -- links */
 
-/* a {
+a {
   color: #009688;
-} */
+}
 
 a {
   color: #004d40;
@@ -341,9 +341,9 @@ h3 {
 
 #intro.section .container *:not(span) {
   font-weight: 300;
-  /* font-weight: 400; */
+  font-weight: 400;
   line-height: 150%;
-  /* padding: 0 0px; */
+  padding: 0 0px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
