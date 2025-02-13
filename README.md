@@ -2,7 +2,7 @@
 
 ##### Personal Portfolio Website ⚡️
 
-> https://chetna-jha-qc.github.io/ChetnaJha/
+> [Live](https://chetna-jha-qc.github.io/)
 
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/Chetna-Jha-QC/ChetnaJha/tree/main)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://chetna-jha-qc.github.io/ChetnaJha/)
