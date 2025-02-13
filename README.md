@@ -13,8 +13,8 @@
 <p align="center"> 
   <kbd>
     <a href="https://chetna-jha-qc.github.io/ChetnaJha/" target="_blank"><img src="./preview/1abc9c.gif">
-    Will update preview image after website is complete and ready.
   </a>
+      Will update preview image after website is complete and ready.
   </kbd>
 </p>
 
