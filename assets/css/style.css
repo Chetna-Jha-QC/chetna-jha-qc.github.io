@@ -585,7 +585,21 @@ small {
     line-height: 150%;
   }
 }
-
+@media (min-width: 993px) {
+    .hide-on-large-only {
+        display: none !important;
+    }
+}
+@media (max-width: 992px) {
+    .hide-on-small-only {
+        display: none !important;
+    }
+}
+@media (max-width: 992px) {
+    .hide-on-med-and-up {
+        display: none !important;
+    }
+}
 @media (max-width: 992px) {
   main {
     padding-left: 0px;
@@ -613,6 +627,9 @@ small {
   .container {
     margin: 0 auto;
   }
+  .hide-on-large-only {
+    display: none !important;
+}
   nav.hide-on-large.only.trigger {
     display: block;
     position: fixed;
