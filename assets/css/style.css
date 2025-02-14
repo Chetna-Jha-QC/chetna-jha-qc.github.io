@@ -190,6 +190,8 @@ nav i {
   padding: 0 15px;
   position: relative;
   top: 5px;
+  /* /* padding: 5px; */
+  /* text-align: center; */ 
 }
 
 /* main */
@@ -221,10 +223,9 @@ dt {
 
 ul.side-nav {
   width: 190px;
-}
-
-ul.side-nav li {
-  padding: 0;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ul.side-nav.fixed a {
@@ -241,6 +242,7 @@ ul.side-nav.fixed a {
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
+  margin: 1%;
 }
 
 ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
@@ -570,6 +572,12 @@ small {
   #experience .container {
     width: 860px;
   }
+  .hide-on-large-only{
+    display: none;
+  }
+  .name-title{
+    display: none;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -578,6 +586,7 @@ small {
     line-height: 200%;
     margin-left: 20px;
   }
+
 }
 
 @media (max-width: 1160px) {
@@ -605,6 +614,7 @@ small {
     padding-left: 0px;
     padding-top: 64px;
   }
+
   ul.side-nav a {
     line-height: 100%;
     padding: 0;
@@ -668,6 +678,9 @@ small {
     right: initial;
     top: initial;
   }
+  .name-title{
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -675,6 +688,9 @@ small {
     font-size: 22px;
     line-height: 200%;
     margin: 30px 0 0;
+  }
+  .name-title{
+    display: none;
   }
   #intro.section .container *:not(span) {
     padding: 0;
