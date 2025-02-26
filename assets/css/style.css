@@ -1,3 +1,123 @@
+/* Top Navigation Styles */
+.top-nav {
+  background: white;
+  box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Desktop Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #008073;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #00695c;
+}
+
+/* Hamburger (Mobile Menu Icon) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001; /* Ensure it is on top */
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: #008073;
+  transition: 0.3s;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-nav {
+    background: #ffffff;
+  }
+
+  .mobile-nav a {
+    color: #008073;
+  }
+
+  .mobile-nav a:hover {
+    color: #00695c;
+  }
+
+  .hamburger div {
+    background: #008073;
+  }
+}
+
+
+
+
+
+
+
+
 
 .profile-picture {
   display: flex;
@@ -6,7 +126,11 @@
   margin-bottom: 20px;
 }
 
+
 .profile-picture img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 220px;
   border-radius: 5px;
@@ -22,23 +146,35 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
-  margin: 0 auto;
-  width: auto;
-  text-align: inherit;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between icons */
+  margin-top: 10px; /* Adjust spacing */
 }
 
 .icon-btn {
-  margin-left: auto;
   width: 50px;
   height: 50px;
+  display: flex;
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
   border: 0;
-  color: #FFFFFF;
+  background: white; /* Ensure the button has a background */
+  border-radius: 50%;
+  font-size: 24px;
   cursor: pointer;
-  font-size: 30px;
-  line-height: 70px;
-  border-radius: 45px;
-  display: inline-block;
-  margin: 4px;
+  transition: transform 0.2s;
+}
+
+.icon-btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
 }
 
 .github {
@@ -53,10 +189,10 @@
   color: grey;
 }
 
-.icon-btn:hover {
+/* .icon-btn:hover {
   transform: scale(1.10);
   color: #FFFFFF;
-}
+} */
 
 .linkedin:hover {
   background-color: #0077b5;

@@ -18,7 +18,6 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
             <link rel="stylesheet" href="./assets/css/style.css" />
-            <link rel="stylesheet" href="./assets/css/nav.css" />
 
     <title>ChetnaJha|PortfolioWebsite</title>
     <link rel="icon" href="./assets/img/gif.gif" type="image/gif">
@@ -34,49 +33,59 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMTWVVC8" 
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- Navivation Starts -->
-     <!-- Top Navigation Bar -->
-<nav class="top-nav">
-  <div class="nav-wrapper">
-    <ul class="nav-links">
-      <li><a href="#" onclick="location.reload();">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a href="https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link" 
-           target="_blank" 
-           aria-label="Chetna's Resume" 
-           onclick="downloadResume(event)">Resume</a>
-      </li>
-    </ul>
-    
-    <!-- Mobile Menu (Hamburger) -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
+    <!-- Top Navigation Bar -->
+  <nav class="top-nav">
+    <div class="nav-wrapper">
+      <ul class="nav-links">
+        <li><a href="#" onclick="location.reload();">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="./ChetnaJha-WebEngineer_Resume.pdf" 
+                    target="_blank" 
+                    aria-label="Chetna's Resume"
+                    onclick="downloadResume(event)">
+                  Resume</a></li>
+      </ul>
+      <!-- Mobile Menu (Hamburger) -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Mobile Navigation -->
+      <ul class="mobile-nav" id="mobileMenu">
+        <li><a href="#" onclick="location.reload();">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="./ChetnaJha-WebEngineer_Resume.pdf" 
+        target="_blank" 
+        aria-label="Chetna's Resume" 
+         onclick="downloadResume(event)">Resume</a></li>
+      </ul>
     </div>
-  </div>
-</nav>
+  </nav>
+    <!-- END OF NAVIGATION -->
+<!-- for Nav Bar -->
+                <script>
+            function toggleMenu() {
+              let menu = document.getElementById("mobileMenu");
+              menu.classList.toggle("active");
+            }
 
-<!-- Mobile Navigation -->
-<ul class="mobile-nav" id="mobileMenu">
-  <li><a href="#" onclick="location.reload();">Home</a></li>
-  <li><a href="#about">About Me</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li>
-    <a href="https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link" 
-       target="_blank" 
-       aria-label="Chetna's Resume" 
-       onclick="downloadResume(event)">Resume</a>
-  </li>
-</ul>
-     <!-- Navigation Ends -->
+            // Close menu when a link is clicked
+            document.querySelectorAll(".mobile-nav a").forEach(link => {
+              link.addEventListener("click", () => {
+                document.getElementById("mobileMenu").classList.remove("active");
+              });
+            });
+          </script>
 
+              <br>
+              <br>
     
     <!-- MAIN -->
 
@@ -88,14 +97,21 @@
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <div class="profile-picture">
-              <img src="./assets/img/Profile.jpg" alt="Chetna Jha">
-            </div>
+                 <img src="./assets/img/Profile.jpg" alt="Chetna Jha">
+              </div>
 
               <h2>Hi, I'm <span class="teal">Chetna Jha</span></h2>
               <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
               <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
             </div>
             <div class="social">
+              <!-- GitHub -->
+                  <a href="https://github.com/Chetna-Jha-QC" target="_blank" aria-label="Chetna's GitHub">
+                    <button class="icon-btn github">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </a>
+
                   <!-- LinkedIn -->
                   <a href="https://www.linkedin.com/in/chetna-jha-39497a238/" target="_blank" aria-label="Chetna's LinkedIn">
                     <button class="icon-btn linkedin">
@@ -103,15 +119,8 @@
                     </button>
                   </a>
 
-                  <!-- GitHub -->
-                  <a href="https://github.com/Chetna-Jha-QC" target="_blank" aria-label="Chetna's GitHub">
-                    <button class="icon-btn github">
-                      <i class="fab fa-github"></i>
-                    </button>
-                  </a>
-
                 <!-- Resume Button -->
-                  <a href="https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link" 
+                  <a href="./ChetnaJha-WebEngineer_Resume.pdf" 
                     target="_blank" 
                     aria-label="Chetna's Resume"
                     onclick="downloadResume(event)">
@@ -125,8 +134,8 @@
                   function downloadResume(event) {
                       event.preventDefault(); // Prevent default link behavior
 
-                      // Open Google Drive link in a new tab
-                      window.open("https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link", "_blank");
+                      // Open link in a new tab
+                      window.open("./ChetnaJha-WebEngineer_Resume.pdf", "_blank");
 
                       // Trigger direct file download immediately
                       window.location.href = "https://drive.google.com/uc?export=download&id=1TonpxmiI7sIou5gOf-iKZGxh_BWoGROs";
@@ -170,9 +179,7 @@
           <div class="card-content">
             <h4 class="brown-text light">Languages and Databases</h4>
             <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
-              </div>
+              
               <div class="col s4 m2">
                 <img alt="" src="./assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
               </div>
@@ -180,7 +187,10 @@
                 <img alt="" src="./assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
               </div>
               <div class="col s4 m2">
-                <img alt="" src="./assets/img/javascript.png" class="responsive-img" />JavaScript
+                <img alt="" src="./assets/img/js300.jpg" class="responsive-img" />JavaScript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
               </div>
               <div class="col s4 m2">
                 <img alt="" src="./assets/img/mongo.jpeg" class="responsive-img" />MongoDB
@@ -239,7 +249,7 @@
                 <img alt="" src="./assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
               </div>
               <div class="col s4 m2">
-                <img alt="" src="./assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+                <img alt="" src="./assets/img/bootstrap.png" class="responsive-img" />Bootstrap
               </div>
             </div>
           </div>
@@ -257,16 +267,15 @@
                 <img alt="" src="./assets/img/github.png" class="responsive-img" />Github
               </div>
               <div class="col s4 m2">
-                <img alt="" src="./assets/img/linux.png" class="responsive-img" />Linux Administration
+                <img alt="" src="./assets/img/aws-logo.png" class="responsive-img" />AWS
               </div>
               <div class="col s4 m2">
                 <img alt="" src="./assets/img/jupyternotebook.png" class="responsive-img" />Jupyter Notebook
               </div>
               <div class="col s4 m2">
                 <img alt="" src="./assets/img/qBraid.jpeg" class="responsive-img" />qBraid
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/aws.png" class="responsive-img" />AWS
+              </div><div class="col s4 m2">
+                <img alt="" src="./assets/img/linux.png" class="responsive-img" />Linux Administration
               </div>
             </div>
           </div>
@@ -380,7 +389,7 @@
         <p>
           <a aria-label="Call Chetna" data-position="top" data-tooltip="Call Chetna"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Chetna"></a></a>   +91 6398134122</a></a>
+              aria-label="Call Chetna">  +91 6398134122</a></a>
         </p>
         <p>
           <a aria-label="Email Chetna" href="mailto:ms.chetnajha@gmail.com" target="_blank" data-position="top"
@@ -412,11 +421,6 @@
 
 
     <!-- Scripts -->
-     <script>
-        function toggleMenu() {
-        document.getElementById("mobileMenu").classList.toggle("active");
-        }
-        </script>
                 
     <!-- Typed.js -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
