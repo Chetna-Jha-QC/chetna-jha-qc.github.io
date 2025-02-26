@@ -18,6 +18,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
             <link rel="stylesheet" href="./assets/css/style.css" />
+            <link rel="stylesheet" href="./assets/css/nav.css" />
 
     <title>ChetnaJha|PortfolioWebsite</title>
     <link rel="icon" href="./assets/img/gif.gif" type="image/gif">
@@ -33,29 +34,49 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMTWVVC8" 
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- Top Navigation Bar -->
+    <!-- Navivation Starts -->
+     <!-- Top Navigation Bar -->
 <nav class="top-nav">
   <div class="nav-wrapper">
     <ul class="nav-links">
-<li><a href="#" onclick="location.reload();">Home</a></li>
+      <li><a href="#" onclick="location.reload();">Home</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link" 
-                    target="_blank" 
-                    aria-label="Chetna's Resume"
-                    onclick="downloadResume(event)">
-                  Resume</a>
-                  
-</li>
+      <li>
+        <a href="https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link" 
+           target="_blank" 
+           aria-label="Chetna's Resume" 
+           onclick="downloadResume(event)">Resume</a>
+      </li>
     </ul>
+    
+    <!-- Mobile Menu (Hamburger) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </nav>
-    <!-- END OF NAVIGATION -->
 
-    <br>
-    <br>
+<!-- Mobile Navigation -->
+<ul class="mobile-nav" id="mobileMenu">
+  <li><a href="#" onclick="location.reload();">Home</a></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li>
+    <a href="https://drive.google.com/file/d/1ZCfUyBHGmnDSL98-s0FtqPhCBgWe_wUc/view?usp=drive_link" 
+       target="_blank" 
+       aria-label="Chetna's Resume" 
+       onclick="downloadResume(event)">Resume</a>
+  </li>
+</ul>
+     <!-- Navigation Ends -->
+
     
     <!-- MAIN -->
 
@@ -98,7 +119,7 @@
                           <i class="fab fa-google-drive"></i>
                       </button>
                   </a>
-                  
+                  <br>
                </div>
               <script>
                   function downloadResume(event) {
@@ -359,13 +380,13 @@
         <p>
           <a aria-label="Call Chetna" data-position="top" data-tooltip="Call Chetna"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Chetna">+91 6398134122</a></a>
+              aria-label="Call Chetna"></a></a>   +91 6398134122</a></a>
         </p>
         <p>
           <a aria-label="Email Chetna" href="mailto:ms.chetnajha@gmail.com" target="_blank" data-position="top"
             data-tooltip="Email Chetna" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
               class="fa fa-envelope"></i><a aria-label="Email Chetna" href="mailto:ms.chetnajha@gmail.com"
-              class="hoverline">ms.chetnajha@gmail.com</a></a>
+              class="hoverline">  ms.chetnajha@gmail.com</a></a>
         </p>
         <p>
           <a aria-label="View Chetna on GitHub" href="https://github.com/Chetna-Jha-QC" target="_blank"
@@ -373,14 +394,14 @@
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa-brands fa-github"></i>
             <a
               aria-label="Chetna on Github" href="https://github.com/Chetna-Jha-QC" class="hoverline"
-              target="_blank">github.com/Chetna-Jha-QC</a></a>
+              target="_blank">  github.com/Chetna-Jha-QC</a></a>
         </p>
         <p>
           <a aria-label="View Chetna on LinkedIn" href="https://www.linkedin.com/in/chetna-jha-39497a238/" target="_blank"
             data-position="top" data-tooltip="View Chetna on LinkedIn"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
             <i class="fa-brands fa-linkedin"></i><a aria-label="Chetna on LinkedIn" href="https://www.linkedin.com/in/chetna-jha-39497a238/"
-              class="hoverline" target="_blank">linkedin.com/in/chetna-jhaqc</a></a>
+              class="hoverline" target="_blank">  linkedin.com/in/chetna-jhaqc</a></a>
         </p>
       </div>
     </section>
@@ -391,6 +412,11 @@
 
 
     <!-- Scripts -->
+     <script>
+        function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+        }
+        </script>
                 
     <!-- Typed.js -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
