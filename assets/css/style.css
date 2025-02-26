@@ -154,8 +154,8 @@
 }
 
 .icon-btn {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center; /* Center icon horizontally */
   align-items: center; /* Center icon vertically */
@@ -289,6 +289,39 @@ dt {
 .container {
   width: 95%;
 }
+/* Center the contact section content */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+/* Style each contact item */
+#contact p {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  margin: 15px 0;
+}
+
+/* Increase icon size */
+#contact i {
+  font-size: 28px;
+}
+
+/* Ensure buttons and text align properly */
+#contact p a {
+  text-decoration: none;
+  color: #008073;
+  font-size: 20px;
+}
+
 
 h3 {
   font-weight: 200;
