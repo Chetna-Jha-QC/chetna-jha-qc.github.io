@@ -194,6 +194,8 @@ blockquote * {
 
 /* main */
 
+
+
 main {
   background: url(../../assets/img/bg.png) repeat;
   padding-left: 190px;
@@ -221,6 +223,14 @@ ul.side-nav {
   flex-direction: column;
 }
 
+/* ul.side-nav.fixed a {
+  box-sizing: content-box;
+  color: rgb(48, 122, 207);
+  display: block;
+  line-height: 100%;
+  padding: 10px 0 12px;
+} */
+
 ul.side-nav.fixed a {
   box-sizing: content-box;
   color: rgb(16, 202, 56);
@@ -234,6 +244,14 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   border: none;
   font-weight: 200;
 }
+
+/* ul.side-nav.fixed li.logo {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+} */
 
 ul.side-nav.fixed li.logo {
   background-color: #fafafa;
@@ -296,7 +314,7 @@ h3 {
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 1100px; /* Prevents images from being too large on big screens */
+    max-width: 500px; /* Prevents images from being too large on big screens */
     margin: 20px auto; /* Centers the card */
     padding: 20px;
     border-radius: 10px;
@@ -331,6 +349,8 @@ h3 {
         padding: 15px;
     }
 }
+
+
 #intro.section {
   background: #a7ffeb repeat;
   position: relative;
@@ -344,6 +364,12 @@ h3 {
   top: 0;
 }
 
+/* #intro.section .container *:not(span) {
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+} */
 
 #intro.section .container *:not(span) {
   font-weight: 300;
@@ -480,6 +506,12 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
+/* main a.hoverline */
+
+/* a.hoverline:hover {
+  border-bottom: 3px solid #24305e !important;
+} */
+
 a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
 }
@@ -560,9 +592,12 @@ small {
   color: #008073 !important;
 }
 
+
 .teal {
   background-color: #008073 !important;
 }
+
+
 
 @media (min-width: 1200px) {
   #experience .container {
